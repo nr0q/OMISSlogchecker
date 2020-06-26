@@ -1,0 +1,21 @@
+<html>
+<head><title>OMISS Awards Checker</title>
+</head>
+<body>
+
+<div>
+Export your OMISS net logs from Netlogger to use this tool. I check Netlogger specific ADIF fields to check for your QSO partner's OM Number, the net you worked on, and their Awards status (VIP, FR, MIL).
+<br />
+<br />
+</div>
+
+<div>
+<form action="check_awards.php" method="post" enctype="multipart/form-data">
+Your Callsign <input type="text" name="callsign"><br />
+Your OMISS # <input type="text" name="omnum"><br />
+Your Log <input type="file" name="adiflogfile" id="adiflogfile"><br />
+<input type="submit" value="Upload and check log" name="submit">
+</form>
+</div>
+</body>
+</html>
